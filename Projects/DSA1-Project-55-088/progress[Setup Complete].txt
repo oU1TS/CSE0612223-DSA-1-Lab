@@ -1,0 +1,13 @@
+# GDExtension Setup
+https://docs.godotengine.org/en/stable/tutorials/scripting/gdextension/gdextension_cpp_example.html 
+
+Install python and pip, set path for python, python/scripts
+Install Visual Studio Build Tools (C++ development ~6GB)
+Godot → Create “demo” project
+Godot → Create Main node and save as “main.tscn”
+CMD → Scons platform=windows
+Clone “godot-cpp”
+Copy “gdexample.h”, “gdexample.cpp”, “register_types.cpp”, “register_types.h” in cpp
+Copy “gdexample.gdextension” in demo/bin
+CMD → Scons
+Godot → Create GDExample node
